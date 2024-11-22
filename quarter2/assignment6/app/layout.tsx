@@ -3,7 +3,7 @@ import { Inter , Roboto} from 'next/font/google'
 import './globals.css'
 import {} from "next/font/google"
 
-const roboto = Roboto({subsets: ['latin'],weight:["400"]}) 
+const roboto = Roboto({subsets: ['latin'],weight:["700","400","500"]}) 
 
 const inter = Inter({ subsets: ['latin'] })
 
@@ -18,8 +18,8 @@ export default function RootLayout({
   children: React.ReactNode
 }) {
   return (
-    <html lang="en">
-      <body className={`${inter.className} ${roboto.className}`}>{children}</body>
+    <html lang="en" className='overflow-x-hidden'>
+      <body className={`${inter.className} ${roboto.className} overflow-x-hidden`}>{children}</body>
     </html>
   )
 }
