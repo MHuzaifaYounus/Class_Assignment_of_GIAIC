@@ -509,7 +509,7 @@ export default function Home() {
 
               </div>
 
-              <p className='text-lg w-[90%]'>"Lorem ipsum dolor sit amet, consectetur adipiscing elit. Suspendisse varius enim in eros elementum tristique. Duis cursus, mi quis viverra ornare."</p>
+              <p className='text-lg w-[90%]'>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Suspendisse varius enim in eros elementum tristique. Duis cursus, mi quis viverra ornare.</p>
 
               <div className="w-[215px] h-[56px] flex justify-between items-center">
                 <div className="w-[56px] h-[56px] rounded-full overflow-hidden">
@@ -536,7 +536,7 @@ export default function Home() {
 
               </div>
 
-              <p className='text-lg w-[90%]'>"Lorem ipsum dolor sit amet, consectetur adipiscing elit. Suspendisse varius enim in eros elementum tristique. Duis cursus, mi quis viverra ornare."</p>
+              <p className='text-lg w-[90%]'>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Suspendisse varius enim in eros elementum tristique. Duis cursus, mi quis viverra ornare.</p>
 
               <div className="w-[215px] h-[56px] flex justify-between items-center">
                 <div className="w-[56px] h-[56px] rounded-full overflow-hidden">
@@ -563,7 +563,7 @@ export default function Home() {
 
               </div>
 
-              <p className='text-lg w-[90%]'>"Lorem ipsum dolor sit amet, consectetur adipiscing elit. Suspendisse varius enim in eros elementum tristique. Duis cursus, mi quis viverra ornare."</p>
+              <p className='text-lg w-[90%]'>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Suspendisse varius enim in eros elementum tristique. Duis cursus, mi quis viverra ornare.</p>
 
               <div className="w-[215px] h-[56px] flex justify-between items-center">
                 <div className="w-[56px] h-[56px] rounded-full overflow-hidden">
