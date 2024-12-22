@@ -49,7 +49,7 @@ const ProductGrid = () => {
           <Card key={index} className="overflow-hidden w-[350px] mt-10">
             <CardHeader className="w-full h-[350px] bg-myGray flex justify-center items-center relative">
               <Button className="absolute top-2 right-2 max-sm:right-4 rounded-full" variant={"secondary"} size={"sm"}>
-                <Image src={"/icons/WishList.svg"} alt="no icon found" width={24} height={24}></Image>
+                <Image src={"/icons/wishlist.svg"} alt="no icon found" width={24} height={24}></Image>
               </Button>
               <Button className="absolute top-14 right-2 max-sm:right-4 rounded-full" variant={"secondary"} size={"sm"}>
                 <Image src={"/icons/eye.svg"} alt="no icon found" width={24} height={24}></Image>

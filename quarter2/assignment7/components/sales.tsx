@@ -41,7 +41,7 @@ const Sales = async () => {
                         <CardHeader className="w-[270px] h-[250px] bg-myGray flex justify-center items-center relative">
                             <Button className="absolute top-2 left-2 bg-myPrimary" size={"sm"}>{Math.floor(Math.random()*100)}%</Button>
                             <Button className="absolute top-2 right-2 max-sm:right-4 rounded-full" variant={"secondary"} size={"sm"}>
-                                <Image src={"/icons/WishList.svg"} alt="no icon found" width={24} height={24}></Image>
+                                <Image src={"/icons/wishlist.svg"} alt="no icon found" width={24} height={24}></Image>
                             </Button>
                             <Button className="absolute top-14 right-2 max-sm:right-4 rounded-full" variant={"secondary"} size={"sm"}>
                                 <Image src={"/icons/eye.svg"} alt="no icon found" width={24} height={24}></Image>

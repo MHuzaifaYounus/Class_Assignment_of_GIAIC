@@ -41,7 +41,7 @@ const Header = () => {
               <Image src={"/icons/search.svg"} alt="no icon found" width={24} height={24}></Image>
 
             </div>
-            <Link href={"/wishlist"}><Image src={"/icons/WishList.svg"} alt="no icon found" width={32} height={32}></Image></Link>
+            <Link href={"/wishlist"}><Image src={"/icons/wishlist.svg"} alt="no icon found" width={32} height={32}></Image></Link>
             <Link href={"/cart"}><Image src={"/icons/cart.svg"} alt="no icon found" width={32} height={32}></Image></Link>
             <Image className='xl:hidden' onClick={menuBtnHandler} src={"/icons/menubtn.svg"} alt="no icon found" width={24} height={24}></Image>
           </div>
