@@ -46,7 +46,7 @@ const ProductGrid = () => {
       </div>) : 
       (<div className="flex flex-col items-center grid-cols-1 lg:grid-cols-3 md:grid-cols-2 gap-4 p-4 md:grid">
         {products.map((product, index) => (
-          <Card key={index} className="overflow-hidden w-[350px] mt-10">
+          <Card key={index} className="overflow-hidden w-[320px] mt-10">
             <CardHeader className="w-full h-[350px] bg-myGray flex justify-center items-center relative">
               <Button className="absolute top-2 right-2 max-sm:right-4 rounded-full" variant={"secondary"} size={"sm"}>
                 <Image src={"/icons/wishlist.svg"} alt="no icon found" width={24} height={24}></Image>
