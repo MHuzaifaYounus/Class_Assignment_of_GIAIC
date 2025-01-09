@@ -5,35 +5,27 @@ import Link from 'next/link'
 import React from 'react'
 
 
-interface Blog {
-    author: string,
-    _updatedAt: string,
-    title: string,
-    slug: string,
-    categories: string,
-    content: string,
-    imageUrl: string
-}
 
 const BlogsPage = async () => {
 
 
     const blogs: Blog[] = await client.fetch(`*[_type == 'post']{
-                author,
-                _updatedAt,
-                title,
-                "slug": slug.current,
-                categories,
-                content,
-                "imageUrl": mainImage.asset -> url
-            } `)
+  author,
+    _updatedAt,
+    title,
+    "slug":slug.current,
+    categories,
+    content,
+  
+  "imageUrl":mainImage.asset->url
+}`)
 
 
-
+    console.log(blogs)
     return (
         <div className="">
             <div className='w-full h-[500px] flex items-center blogs_bg justify-center'>
-                <h1 className='sm:text-7xl text-5xl font-extrabold text-white '>Blogs Details</h1>
+                <h1 className='sm:text-7xl text-5xl font-extrabold text-white '>Blogs</h1>
             </div>
             <div className="w-full h-[100px] relative top-[-100px] bottom_brush">
             </div>
@@ -73,9 +65,9 @@ const BlogsPage = async () => {
                                 </div>
                             </div>
                             <h1 className='sm:text-5xl text-2xl font-extrabold pt-3'>{blog.title}</h1>
-                            <p className='sm:text-xl text-sm pt-4 text-gray-400'>{blog.content.split("",250)}...</p>
+                            <p className='sm:text-xl text-sm pt-4 text-gray-400'>{blog.content.split("", 250)}...</p>
                             <div className="mt-5">
-                                <Button className=''><Link href={"/blogs"}>Read More</Link></Button>
+                                <Button className=''><Link href={`/blogs/${blog.slug}`}>Read More</Link></Button>
                             </div>
                         </div>
 
