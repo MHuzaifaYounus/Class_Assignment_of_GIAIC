@@ -5,6 +5,7 @@ import {Libre_Bodoni} from "next/font/google";
 
 const mainFont = Libre_Bodoni({
   weight: "400",
+  subsets:["latin"]
 });
 export default function Home() {
   return (

@@ -2,11 +2,10 @@
 import { Button } from '@/components/ui/button'
 import { client } from '@/sanity/lib/client'
 import Image from 'next/image'
-import Link from 'next/link'
 import React, { ChangeEvent, useEffect, useState } from 'react'
 
 
-const page = ({ params: { slug } }: { params: { slug: string } }) => {
+const BlogDetails = ({ params: { slug } }: { params: { slug: string } }) => {
   const [blog, setBlog] = useState<Blog | null>(null)
   type Comment = {
     username: string,
@@ -59,7 +58,7 @@ const page = ({ params: { slug } }: { params: { slug: string } }) => {
     }
     getData()
 
-  }, [])
+  })
 
 
 
@@ -147,4 +146,4 @@ const page = ({ params: { slug } }: { params: { slug: string } }) => {
   )
 }
 
-export default page
+export default BlogDetails

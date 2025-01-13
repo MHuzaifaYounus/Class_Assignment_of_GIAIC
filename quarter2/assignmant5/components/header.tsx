@@ -6,6 +6,7 @@ import {Rye} from "next/font/google";
 
 const logoFont = Rye({
   weight: "400",
+  subsets:["latin"]
 });
 
 
