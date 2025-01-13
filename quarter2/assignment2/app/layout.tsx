@@ -1,4 +1,3 @@
-import NavBar from "./components/ui/navbar";
 import "./globals.css";
 
 export default function RootLayout({
@@ -6,10 +5,10 @@ export default function RootLayout({
 }: Readonly<{
   children: React.ReactNode;
 }>) {
+  
   return (
     <html lang="en">
-      <body className="body">
-        <NavBar/>
+      <body>
         {children}
       </body>
     </html>
