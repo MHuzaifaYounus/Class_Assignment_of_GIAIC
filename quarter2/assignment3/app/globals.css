@@ -1,19 +1,14 @@
 @tailwind base;
 @tailwind components;
 @tailwind utilities;
-:root {
-    --background: #121212;
-    --foreground: #ffffff;
-    --primary-color:#F83D3D;
-  }
-  
+
   
   body {
     font-family: Arial, Helvetica, sans-serif;
   }
 
   span{
-   color: var(--primary-color);
+   color: #F83D3D;
   }
   .title {
     height: 100px;

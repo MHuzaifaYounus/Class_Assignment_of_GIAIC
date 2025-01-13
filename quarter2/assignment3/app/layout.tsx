@@ -9,7 +9,7 @@ export default function RootLayout({
 }>) {
   return (
     <html className="max-w-[100vw] overflow-x-hidden scroll-smooth" lang="en">
-      <body className="max-w-[100vw] overflow-x-hidden text-foreground bg-background relative antialiased scroll-smooth">
+      <body className="max-w-[100vw] overflow-x-hidden text-[white] bg-[#121212] relative antialiased scroll-smooth">
         <div className="absolute top-3 left-[-120px] bg-primary h-[400px] w-[400px] rounded-full blur-[200px] opacity-70 -z-10"></div>
         <div className="absolute bottom-3 right-[-120px] bg-primary h-[400px] w-[400px] rounded-full blur-[200px] opacity-70 -z-10"></div>
 
