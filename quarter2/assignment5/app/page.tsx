@@ -12,7 +12,7 @@ export default function Home() {
     <div className="main w-full">
       <Header />
       <div className="hero flex justify-evenly items-center w-full h-[825.56px]">
-        <div className={`hero-left flex flex-col justify-evenly w-1/2 h-[573.59] ${mainFont.className}`}>
+        <div className={`hero-left flex flex-col justify-evenly w-1/2 h-[573.59px] ${mainFont.className}`}>
           <h1 className={`font-bold text-[37.84px] w-[472.97] `}>IMPECCABLE CRAFTSMANSHIP AND FINESSE</h1>
           <p className="w-[789.9px] font-medium text-[29.24px] text-primary">An example of intricate workmanship and detail, elegant necklaces and long and short chains form a part of our desirable collection.</p>
           <button className="w-[247.67px] h-[49.2px] rounded-[8.6px] p-[8.6px] bg-primary font-medium text-[25.8px] leading-[32.25px] text-white">Explore Now</button>
