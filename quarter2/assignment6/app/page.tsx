@@ -18,7 +18,7 @@ export default function Home() {
         </div>
       </div>
       <div className="header bg-[#F7F7F7] h-[72px] w-full flex justify-evenly items-center  border-b border-black [428px]:mt-2 max-[428px]:p-6 ">
-        <div className="logo h-[41px] flex items-center max-[428px]:h-[48px] max-[428px]:w-[380px] max-[428px]:justify-between">
+        <div className="logo h-[41px] flex items-center max-[428px]:h-[48px] max-xl:w-[90%] max-lg:justify-between">
           <Image src={"/logo.svg"} alt='no icon found' height={30.38} width={130.6}></Image>
           <div className="h-[48px] w-[48px] [428px]:hidden flex justify-center items-center">
             <Image src={"/menu.svg"} alt='no img found' height={24} width={24}></Image>
@@ -27,7 +27,7 @@ export default function Home() {
         </div>
 
 
-        <div className="nav h-11 w-[910px] flex items-center justify-between max-[428px]:hidden ">
+        <div className="nav h-11 w-[910px] flex items-center justify-between max-lg:hidden ">
           <ul className='flex justify-between  w-[687px]'>
             <li className='border-b border-black'><Link href={"/"}>Home</Link></li>
             <li><Link href={"/"}>Courses</Link></li>
@@ -42,25 +42,30 @@ export default function Home() {
 
           </div>
         </div>
+
       </div>
-      <div className="hero_section h-[800px] w-full flex items-center max-[428px]:flex-col ">
-        <div className="left h-[400px] w-[56.25%] flex flex-col justify-evenly items-center max-[428px]:w-full max-[428px]:py-[64px] max-[428px]:px-6 max-[428px]:h-[390px]">
-          <h1 className='text-[56px] font-bold w-[580px] max-[428px]:text-[40px] max-[428px]:w-[380px]'>Learn new skills online with ease</h1>
-          <p className='text-base w-[580px] max-[428px]:w-[380px]'>Discover a wide range of courses covering a variety of subjects, taught by expert instructors.</p>
-          <div className="btn_box w-[580px] mt-[30px] max-[428px]:w-[382px] max-[428px]:h-[64px] max-[428px]:flex max-[428px]:justify-between ">
-            <button className='h-[48px] border border-black bg-black text-white rounded-[5px] py-3 px-6 max-[428px]:w-[190px] max-[428px]:text-base'>Start learning now</button>
-            <button className='ml-4 h-[48px] border border-black  rounded-[5px] py-3 px-6 max-[428px]:w-[175px] max-[428px]:text-base max-[428px]:ml-0' >Explore Courses</button>
+      <div className="hero_section min-h-[800px] w-full flex items-center max-lg:flex-col ">
+
+        <div className="left h-[400px] w-[56.25%] flex flex-col justify-evenly items-center max-lg:w-[90%] max-lg:h-[500px] ">
+          <h1 className='text-[56px] font-bold w-[580px] max-lg:w-[90%]   max-[428px]:text-[40px]'>Learn new skills online with ease</h1>
+          <p className='text-base w-[580px]  max-lg:w-[90%]'>Discover a wide range of courses covering a variety of subjects, taught by expert instructors.</p>
+
+          <div className="btn_box w-[580px] mt-[30px] max-lg:w-[80%] max-sm:w-full max-[428px]:h-[64px] max-[428px]:flex max-lg:justify-between ">
+            <button className='h-[48px] max-sm:h-[70px] border border-black bg-black text-white rounded-[5px] py-3 px-6'>Start learning now</button>
+
+            <button className='ml-4 h-[48px] max-sm:h-[70px] border border-black  rounded-[5px] py-3 px-6 ' >Explore Courses</button>
           </div>
         </div>
+
         <div className="right h-full w-[43.75%] overflow-hidden max-[428px]:w-full max-[428px]:h-[390px]">
           <Image src={"/heroimg.jpg"} alt='no icon found' height={900} width={720}></Image>
         </div>
 
 
       </div>
-      <div className="section1 bg-[#F7F7F7] h-[228px] w-full flex justify-between items-center max-[428px]:flex-col max-[428px]:justify-evenly max-[428px]:items-start max-[428px]:py-[48px] max-[428px]:px-6 max-[428px]:h-[239px]">
-        <h5 className='text-[24px] w-[320px] font-bold max-[428px]:w-[327px] max-[428px]:text-lg  '>Trusted by 2000+ companies worldwide.</h5>
-        <div className="logos  w-[880px] flex justify-evenly items-center h-[56px] max-[428px]:w-full">
+      <div className="section1 bg-[#F7F7F7] h-[228px] w-full flex justify-evenly items-center max-lg:flex-col max-[428px]:justify-evenly max-[428px]:items-start max-[428px]:py-[48px] max-[428px]:px-6 max-[428px]:h-[239px]">
+        <h5 className='text-[24px] text-center lg:w-[320px] font-bold max-[428px]:w-[327px] max-[428px]:text-lg  '>Trusted by 2000+ companies worldwide.</h5>
+        <div className="logos  w-[880px] max-lg:w-[90%] flex justify-evenly items-center h-[56px] max-[428px]:w-full">
           <Image src={"/logos/logo1.svg"} alt='no icon found' height={38.52} width={123.8}></Image>
           <Image src={"/logos/logo2.svg"} alt='no icon found' height={38.52} width={123.8}></Image>
           <Image src={"/logos/logo3.svg"} alt='no icon found' height={38.52} width={123.8}></Image>
@@ -71,12 +76,12 @@ export default function Home() {
         </div>
 
       </div>
-      <div className="section2 h-[1049px] w-full flex flex-col items-center justify-evenly max-[428px]:h-[862px] max-[428px]:py-[48px] px-6">
-        <div className="h-[109px] w-[768px] flex flex-col justify-between max-[428px]:h-[162px] max-[428px]:w-[385px] max-[428px]:items-center max-[428px]:text-center max-[428px]:gap-[37px]">
+      <div className="section2 min-h-[1049px] w-full flex flex-col items-center justify-evenly  max-[428px]:py-[48px] px-6 pt-10">
+        <div className="h-[109px] w-[768px] max-lg:w-[90%] flex flex-col justify-between max-[428px]:h-[162px] max-[428px]:w-[385px] max-[428px]:items-center max-[428px]:text-center max-[428px]:gap-[37px] p-5">
           <h1 className='text-5xl font-bold max-[428px]:text-[32px]'>Explore Courses By Category</h1>
           <p>Discover a wide range of courses covering a variety of subjects, taught by expert instructors.</p>
         </div>
-        <div className="flex justify-between flex-wrap min-h-[636px] max-[428px]:min-h-[444px]">
+        <div className="flex justify-between max-lg:justify-center flex-wrap min-h-[636px] max-[428px]:min-h-[444px] p-10">
           <div className="card bg-[#F7F7F7] mt-4 h-[132px] w-[394.6px] flex justify-evenly items-center max-[428px]:w-[380px] max-[428px]:p-4   ">
             <div className="icon h-[100px] w-[100px] flex justify-center items-center bg-white ">
               <Image src={"/category/icon1.svg"} alt='no icon found' height={32} width={32}></Image>
@@ -170,18 +175,18 @@ export default function Home() {
 
         </div>
         <div className="flex justify-center items-center w-full">
-          <button className='border border-black rounded-[5px] py-3 px-6 h-[48px] w-[155px] text-xs'>View All Courses</button>
+          <button className='border border-black rounded-[5px] px-6 h-[48px] w-[155px] text-xs'>View All Courses</button>
         </div>
 
       </div>
-      <div className="section3 h-[488px] w-full justify-center items-center max-[428px]:h-[451px]">
-        <div className="container w-[90%] h-[264px] flex flex-col justify-between items-center m-auto max-[428px]:h-[355px]">
+      <div className="section3 min-h-[488px] w-full justify-center items-center  pt-20">
+        <div className="container w-[90%] min-h-[264px] flex flex-col justify-between items-center m-auto pt-10">
           <div className="h-[136px] flex flex-col justify-between items-center max-[428px]:h-[147px]">
             <h1 className='text-5xl font-bold text-center max-[428px]:text-[34px]'>Our Achivements</h1>
-            <p className='text-center max-[428px]:text-lg'>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Suspendisse varius enim in eros elementum tristique. <span className='max-[428px]:hidden'> Duis cursus, mi quis viverra ornare, eros dolor interdum nulla, ut commodo diam libero vitae erat.</span></p>
+            <p className='text-center max-[428px]:text-lg pt-4'>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Suspendisse varius enim in eros elementum tristique. <span className='max-[428px]:hidden'> Duis cursus, mi quis viverra ornare, eros dolor interdum nulla, ut commodo diam libero vitae erat.</span></p>
 
           </div>
-          <div className="h-[96px] w-full flex justify-evenly items-center max-[428px]:h-[176px] flex-wrap">
+          <div className="h-[96px] w-full flex justify-evenly items-center max-sm:h-[400px] flex-wrap mt-10">
             <div className="h-full flex flex-col justify-evenly items-center max-[428px]:w-[182px] max-[428px]:h-[60px]  ">
               <h1 className='text-4xl font-bold max-[428px]:text-[20px]'>+200</h1>
               <p className=''>Courses</p>
@@ -201,7 +206,7 @@ export default function Home() {
           </div>
         </div>
       </div>
-      <div className="sectionn4 h-[1742px] w-full flex flex-col justify-evenly items-center max-[428px]:pb-[40px]">
+      <div className="sectionn4 w-full flex flex-col justify-evenly items-center max-[428px]:pb-[40px] p-20 max-sm:p-4">
         <div className="h-[118px] w-[768px] flex flex-col justify-between items-center max-[428px]:w-[249px] max-[428px]:h-[93px]">
           <h1 className='text-[56px] font-bold max-[428px]:text-[32px]'>Courses</h1>
           <p className=''>Your Ultimate Guide to learning</p>
@@ -211,9 +216,9 @@ export default function Home() {
           <li>Recommended</li>
           <li>Best Price</li>
         </ul>
-        <div className="flex w-full h-[1132px] flex-wrap justify-between max-[428px]:h-[1690px] max-[428px]:items-center max-[428px]:pt-[50px]">
+        <div className="flex w-full flex-wrap justify-between max-lg:justify-center pt-10">
 
-          <div className="card bg-[#F7F7F7] flex flex-col justify-between  h-[534px] w-[416px] max-[428px]:h-[482px] max-[428px]:w-[380px] max-[428px]:m-auto ">
+          <div className="card mt-16 bg-[#F7F7F7] flex flex-col justify-between  h-[534px] w-[416px] max-sm:w-[90%]  ">
 
             <div className="h-[300px] w-full bg-gray-500 overflow-hidden">
               <Image src={"courses/image1.svg"} alt='no  img found' height={300} width={416}></Image>
@@ -238,7 +243,7 @@ export default function Home() {
             </div>
           </div>
 
-          <div className="card bg-[#F7F7F7] flex flex-col justify-between  h-[534px] w-[416px] max-[428px]:h-[482px] max-[428px]:w-[380px] max-[428px]:m-auto ">
+          <div className="card mt-16 bg-[#F7F7F7] flex flex-col justify-between  h-[534px] w-[416px] max-sm:w-[90%]  ">
 
             <div className="h-[300px] w-full bg-gray-500 overflow-hidden">
               <Image src={"courses/image2.svg"} alt='no  img found' height={300} width={416}></Image>
@@ -263,7 +268,7 @@ export default function Home() {
             </div>
           </div>
 
-          <div className="card bg-[#F7F7F7] flex flex-col justify-between  h-[534px] w-[416px] max-[428px]:h-[482px] max-[428px]:w-[380px] max-[428px]:m-auto ">
+          <div className="card mt-16 bg-[#F7F7F7] flex flex-col justify-between  h-[534px] w-[416px] max-sm:w-[90%]  ">
 
             <div className="h-[300px] w-full bg-gray-500 overflow-hidden">
               <Image src={"courses/image3.svg"} alt='no  img found' height={300} width={416}></Image>
@@ -288,7 +293,7 @@ export default function Home() {
             </div>
           </div>
 
-          <div className="card bg-[#F7F7F7] flex flex-col justify-between  h-[534px] w-[416px] max-[428px]:h-[482px] max-[428px]:w-[380px] max-[428px]:m-auto max-[428px]:hidden ">
+          <div className="card mt-16 bg-[#F7F7F7] flex flex-col justify-between  h-[534px] w-[416px] max-[428px]:h-[482px] max-[428px]:w-[380px] max-[428px]:m-auto max-[428px]:hidden ">
 
             <div className="h-[300px] w-full bg-gray-500 overflow-hidden">
               <Image src={"courses/image4.svg"} alt='no  img found' height={300} width={416}></Image>
@@ -313,7 +318,7 @@ export default function Home() {
             </div>
           </div>
 
-          <div className="card bg-[#F7F7F7] flex flex-col justify-between  h-[534px] w-[416px] max-[428px]:h-[482px] max-[428px]:w-[380px] max-[428px]:m-auto max-[428px]:hidden ">
+          <div className="card mt-16 bg-[#F7F7F7] flex flex-col justify-between  h-[534px] w-[416px] max-[428px]:h-[482px] max-[428px]:w-[380px] max-[428px]:m-auto max-[428px]:hidden ">
 
             <div className="h-[300px] w-full bg-gray-500 overflow-hidden">
               <Image src={"courses/image5.svg"} alt='no  img found' height={300} width={416}></Image>
@@ -338,7 +343,7 @@ export default function Home() {
             </div>
           </div>
 
-          <div className="card bg-[#F7F7F7] flex flex-col justify-between  h-[534px] w-[416px] max-[428px]:h-[482px] max-[428px]:w-[380px] max-[428px]:m-auto max-[428px]:hidden ">
+          <div className="card mt-16 bg-[#F7F7F7] flex flex-col justify-between  h-[534px] w-[416px] max-[428px]:h-[482px] max-[428px]:w-[380px] max-[428px]:m-auto max-[428px]:hidden ">
 
             <div className="h-[300px] w-full bg-gray-500 overflow-hidden">
               <Image src={"courses/image6.svg"} alt='no  img found' height={300} width={416}></Image>
@@ -364,7 +369,7 @@ export default function Home() {
           </div>
 
         </div>
-        <div className="w-full flex justify-center max-[428px]:pt-[40px]">
+        <div className="w-full pt-10 flex justify-center max-[428px]:pt-[40px]">
           <button className='w-[152px] h-10 text-base border border-black rounded-[5px]'>View All Courses</button>
         </div>
 
@@ -372,16 +377,16 @@ export default function Home() {
 
 
       </div>
-      <div className="section5 bg-[#F7F7F7] w-full h-[995px] flex flex-col justify-evenly items-center max-[428px]:h-[1075px]">
+      <div className="section5 bg-[#F7F7F7] w-full flex flex-col justify-evenly items-center">
 
-        <div className="h-[109px] w-[768px] flex flex-col justify-between items-center max-[428px]:h-[120px] max-[428px]:w-[363px] max-[428px]:text-center">
+        <div className="h-[109px] pt-5 w-[768px] flex flex-col justify-between items-center max-[428px]:h-[120px] max-sm:w-[90%] max-[428px]:text-center">
           <h1 className='text-5xl font-bold max-[428px]:text-3xl'>Our Team</h1>
           <p className='text-lg'>Lorem ipsum dolor sit amet, consectetur adipiscing elit. </p>
         </div>
 
-        <div className="w-full h-[610px] flex flex-wrap justify-around max-[428px]:h-[723px]">
+        <div className="w-full flex flex-wrap justify-around pt-10">
 
-          <div className="card w-[394.67px] h-[272px] flex flex-col justify-between items-center max-[428px]:h-[209px]  ">
+          <div className="card w-[394.67px] h-[272px] flex flex-col justify-between items-center max-[428px]:h-[209px]   mt-10">
             <Image src={"/team/image1.svg"} alt='no icon found' width={80} height={80}></Image>
 
 
@@ -398,7 +403,7 @@ export default function Home() {
 
           </div>
 
-          <div className="card w-[394.67px] h-[272px] flex flex-col justify-between items-center max-[428px]:h-[209px] ">
+          <div className="card w-[394.67px] h-[272px] flex flex-col justify-between items-center max-[428px]:h-[209px]  mt-10">
             <Image src={"/team/image2.svg"} alt='no icon found' width={80} height={80}></Image>
 
 
@@ -415,7 +420,7 @@ export default function Home() {
 
           </div>
 
-          <div className="card w-[394.67px] h-[272px] flex flex-col justify-between items-center max-[428px]:h-[209px]">
+          <div className="card w-[394.67px] h-[272px] flex flex-col justify-between items-center max-[428px]:h-[209px] mt-10">
             <Image src={"/team/image3.svg"} alt='no icon found' width={80} height={80}></Image>
 
 
@@ -487,18 +492,18 @@ export default function Home() {
 
 
       </div>
-      <div className="section6 bg-[#F7F7F7] h-[830px] w-full flex flex-col items-center justify-evenly max-[428px]:h-[698px]" >
+      <div className="section6 bg-[#F7F7F7] h-[830px] w-full flex flex-col items-center justify-evenly max-[428px]:h-[698px] pt-20" >
 
         <div className="w-[90%] flex flex-col justify-between max-[428px]:text-center max-[428px]:h-[100px]">
           <h1 className='text-5xl font-bold max-[428px]:text-3xl'>Customer testimonals</h1>
           <p className='text-lg max-[428px]:text-base'>Lorem ipsum dolor sit amet, consectetur adipiscing elit.</p>
         </div>
 
-        <div className="h-[417px] w-[90%] flex flex-col justify-between">
+        <div className="min-h-[417px] w-[90%] flex flex-col justify-between ">
 
-          <div className="w-full flex justify-between">
+          <div className="w-full flex justify-between max-lg:items-center mt-10">
 
-            <div className="card h-[321px] w-[362px]  border border-black flex flex-col p-[32px] justify-between  max-[428px]:w-full ">
+            <div className="card min-h-[321px] w-[362px]  border border-black flex flex-col p-[32px] justify-between  max-lg:w-full mb-10">
 
               <div className="flex">
                 <Image src={"/filledStar.svg"} alt='no icon found' width={20} height={18}></Image>
@@ -509,9 +514,9 @@ export default function Home() {
 
               </div>
 
-              <p className='text-lg w-[90%]'>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Suspendisse varius enim in eros elementum tristique. Duis cursus, mi quis viverra ornare.</p>
+              <p className='text-lg w-[90%] pt-5'>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Suspendisse varius enim in eros elementum tristique. Duis cursus, mi quis viverra ornare.</p>
 
-              <div className="w-[215px] h-[56px] flex justify-between items-center">
+              <div className="w-[215px] h-[56px] flex justify-between items-center pt-5">
                 <div className="w-[56px] h-[56px] rounded-full overflow-hidden">
                   <Image src={"/team/image3.svg"} alt='no icon found' width={56} height={56}></Image>
 
@@ -525,7 +530,7 @@ export default function Home() {
 
             </div>
 
-            <div className="card h-[321px] w-[362px]  border border-black flex flex-col p-[32px] justify-between  max-[428px]:w-full max-[428px]:hidden">
+            <div className="card h-[321px] w-[362px]  border border-black flex flex-col p-[32px] justify-between  max-[428px]:w-full max-lg:hidden">
 
               <div className="flex">
                 <Image src={"/filledStar.svg"} alt='no icon found' width={20} height={18}></Image>
@@ -552,7 +557,7 @@ export default function Home() {
 
             </div>
 
-            <div className="card h-[321px] w-[362px]  border border-black flex flex-col p-[32px] justify-between  max-[428px]:w-full max-[428px]:hidden">
+            <div className="card h-[321px] w-[362px]  border border-black flex flex-col p-[32px] justify-between  max-[428px]:w-full max-lg:hidden">
 
               <div className="flex">
                 <Image src={"/filledStar.svg"} alt='no icon found' width={20} height={18}></Image>
@@ -613,28 +618,28 @@ export default function Home() {
       </div>
       <div className="section7 h-[684px] w-full p-20 flex flex-col justify-between max-[428px]:p-0 max-[428px]:items-center ">
 
-        <div className="flex justify-between h-[82px] max-[428px]:flex-col max-[428px]:h-[300px] max-[428px]:w-[90%] max-[428px]:pt-6">
-          <div className="max-[428px]:h-[151px] max-[428px]:text-center flex flex-col justify-between">
-            <h1 className='font-semibold text-lg'>Sunscribe to our newsletter</h1>
+        <div className="flex justify-between h-[82px] max-md:flex-col max-md:h-[300px] max-md:w-full max-md:pt-6">
+          <div className="max-md:h-[151px] max-md:text-center flex flex-col justify-between">
+            <h1 className='font-semibold text-lg'>Subscribe to our newsletter</h1>
             <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit.</p>
           </div>
-          <div className="w-[400px] h-full flex flex-col justify-between max-[428px]:h-[146px] max-[428px]:w-[380px] max-[428px]:mt-10">
-            <div className="flex w-full justify-between max-[428px]:flex-col max-[428px]:h-[112px]">
-              <input type="text" placeholder='Enter your email' className='p-3 border border-black h-12 w-[265px] rounded-[5px] max-[428px]:w-full' />
-              <button className='border border-black h-12 w-[119px] rounded-[5px] py-3 px-6 max-[428px]:w-full'>Subscribe</button>
+          <div className="w-[400px] h-full flex flex-col justify-between max-md:h-[146px] max-md:w-[90%] max-md:mt-10 max-md:m-auto">
+            <div className="flex w-full justify-between max-md:flex-col max-md:h-[112px] max-md:items-center ">
+              <input type="text" placeholder='Enter your email' className='p-3 border border-black h-12 w-[265px] rounded-[5px] max-md:w-full' />
+              <button className='border border-black h-12 w-[119px] rounded-[5px] py-3 px-6 max-md:w-full'>Subscribe</button>
             </div>
-            <p className='text-xs max-[428px]:w-full max-[428px]:text-center max-[428px]:pt-6'>By subscribing you agree to with our <span className='border-b border-black'>Privacy Policy</span></p>
+            <p className='text-xs max-md:w-full max-md:text-center max-md:pt-6'>By subscribing you agree to with our <span className='border-b border-black'>Privacy Policy</span></p>
           </div>
         </div>
 
-        <div className="h-[225px] flex justify-between max-[428px]:w-[172px] max-[428px]:flex-col max-[428px]:h-[831px] max-[428px]:pt-6 max-[428px]:pb-[20px]">
-          <div className="w-[250px] h-[40px]">
+        <div className="h-[225px] flex justify-between max-md:w-full max-md:flex-col max-md:h-[831px] max-md:pt-6 max-md:pb-[20px] max-md:items-center">
+          <div className="w-[250px] h-[40px] max-md:flex max-md:justify-center max-md:w-[90%]">
             <Image src={"/logo.svg"} alt='no img found' height={40} width={130}></Image>
           </div>
 
-          <div className="h-[225px] w-[250px] flex flex-col justify-between max-[428px]:text-center max-[428px]:w-full max-[428px]:h-[245] max-[428px]:pt-6 max-[428px]:pb-[20px]">
+          <div className="h-[225px] w-[250px] flex flex-col justify-between max-md:text-center max-md:w-full max-md:h-[245] max-md:pt-6 max-md:pb-[20px]">
             <h2 className='text-base font-semibold'>Courses</h2>
-            <ul className='w-full h-[185px] flex flex-col justify-between max-[428px]:text-sm max-[428px]:mt-2 '>
+            <ul className='w-full h-[185px] flex flex-col justify-between max-md:text-sm max-md:mt-2 '>
               <li>Business</li>
               <li>Development</li>
               <li>Technology</li>
@@ -644,9 +649,9 @@ export default function Home() {
             </ul>
           </div>
 
-          <div className="h-[225px] w-[250px] flex flex-col justify-between max-[428px]:text-center max-[428px]:w-full max-[428px]:h-[245] max-[428px]:pt-6 max-[428px]:pb-[20px]">
+          <div className="h-[225px] w-[250px] flex flex-col justify-between max-md:text-center max-md:w-full max-md:h-[245] max-md:pt-6 max-md:pb-[20px]">
             <h2 className='text-base font-semibold'>Resources</h2>
-            <ul className='w-full h-[185px] flex flex-col justify-between max-[428px]:text-sm max-[428px]:mt-2'>
+            <ul className='w-full h-[185px] flex flex-col justify-between max-md:text-sm max-md:mt-2'>
               <li>Career</li>
               <li>Resume</li>
               <li>Learning</li>
@@ -656,9 +661,9 @@ export default function Home() {
             </ul>
           </div>
 
-          <div className="h-[225px] w-[250px] flex flex-col justify-between max-[428px]:text-center max-[428px]:w-full max-[428px]:h-[245] max-[428px]:pt-6 max-[428px]:pb-[20px]">
+          <div className="h-[225px] w-[250px] flex flex-col justify-between max-md:text-center max-md:w-full max-md:h-[245] max-md:pt-6 max-md:pb-[20px]">
             <h2 className='text-base font-semibold'>About Us</h2>
-            <ul className='w-full h-[185px] flex flex-col justify-between max-[428px]:text-sm max-[428px]:mt-2'>
+            <ul className='w-full h-[185px] flex flex-col justify-between max-md:text-sm max-md:mt-2'>
               <li>Contact</li>
               <li>Help/Support</li>
               <li>FAQ</li>
@@ -670,18 +675,18 @@ export default function Home() {
 
         </div>
 
-        <div className="h-[57px] flex justify-between items-end border-t border-black max-[428px]:h-[177px] max-[428px]:flex-col max-[428px]:w-[380px] max-[428px]:pt-[20px] max-[428px]:pb-[30px]">
+        <div className="h-[57px] flex justify-between items-end border-t border-black max-md:h-[177px] max-md:flex-col max-md:w-full max-md:pt-[20px] max-md:pb-[30px]">
 
-          <div className="flex w-[564px] justify-between text-sm max-[428px]:flex-col max-[428px]:w-[345px] max-[428px]:m-auto max-[428px]:h-[66px] max-[428px]:items-center">
+          <div className="flex w-[564px] justify-between text-sm max-md:flex-col max-md:w-full max-md:m-auto max-md:h-[66px] max-md:items-center">
             <h2 className='text-sm'>2023 Ddsgnr.All right reserved.</h2>
-            <ul className='flex justify-between text-sm w-[345px] max-[428px]:w-full max-[428px]:text-xs'>
+            <ul className='flex justify-between text-sm w-[345px] max-md:w-[90%] max-md:text-xs'>
               <li className='border-b border-black'>Privacy Policy</li>
               <li className='border-b border-black'>Terms opf Services</li>
               <li className='border-b border-black'>Cookies Settings</li>
             </ul>
           </div>
 
-          <div className="h-6 w-[132px] flex justify-evenly items-center max-[428px]:mt-10 max-[428px]:m-auto">
+          <div className="h-6 w-[132px] flex justify-evenly max-md:w-full items-center max-md:mt-10 max-md:m-auto">
             <Image src={"/fb.svg"} alt='no icon found' height={18} width={10}></Image>
             <Image src={"/insta.svg"} alt='no icon found' height={18} width={18}></Image>
             <Image src={"/x.svg"} alt='no icon found' height={15.3} width={18}></Image>
